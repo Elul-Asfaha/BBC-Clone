@@ -60,13 +60,13 @@ const Nav = () => {
             <div className='mx-auto lg:max-w-[1400px] flex gap-5 p-4 items-center'>
                 <>
                     <div className='flex gap-2'>
-                        <p className='bg-white text-black px-2 py-1 font-bold'>
+                        <p className='bg-white text-black px-3 py-1 font-bold text-2xl'>
                             B
                         </p>
-                        <p className='bg-white text-black px-2 py-1 font-bold'>
+                        <p className='bg-white text-black  px-3 py-1 font-bold text-2xl'>
                             B
                         </p>
-                        <p className='bg-white text-black px-2 py-1 font-bold'>
+                        <p className='bg-white text-black  px-3 py-1 font-bold text-2xl'>
                             C
                         </p>
                     </div>
