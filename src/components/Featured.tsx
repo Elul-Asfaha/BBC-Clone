@@ -1,3 +1,5 @@
+import Feature from "./Feature";
+
 type featured = {
     type: string;
     featureData: {
@@ -15,21 +17,13 @@ const Featured = ({ type, featureData }: featured) => {
             </p>
             <div className='grid md:grid-cols-3 gap-5'>
                 {featureData.map((items, index) => (
-                    <div
+                    <Feature
                         key={index}
-                        className='flex flex-col md:gap-2 border-b md:border-none pb-2 md:pb-0'
-                    >
-                        <img
-                            src={items.imgUrl + items.title}
-                            alt={items.title}
-                            className='h-[200px] object-cover w-full hidden md:flex'
-                        />
-                        <p className='font-bold text-xl'>{items.title}</p>
-                        <p className='text-gray-700'>{items.description}</p>
-                        <div className='border-l-2 mt-5 border-red-500 pl-2 leading-5'>
-                            {items.category}
-                        </div>
-                    </div>
+                        imgDisp={items.imgUrl + items.title}
+                        title={items.title}
+                        description={items.description}
+                        category={items.category}
+                    />
                 ))}
             </div>
         </div>

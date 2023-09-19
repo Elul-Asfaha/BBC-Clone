@@ -5,7 +5,7 @@ const Weather = () => {
     const [searchWeather, setSearchWeather] = useState("Addis Ababa");
     const [displayWeather, setDisplayWeather] = useState("Addis Ababa");
 
-    const handleSearch = (e) => {
+    const handleSearch = (e: Event) => {
         e.preventDefault();
         setDisplayWeather(searchWeather);
     };
@@ -23,7 +23,7 @@ const Weather = () => {
                 </button>
             </div>
             {openSearch && (
-                <form onSubmit={handleSearch}>
+                <form onSubmit={(e) => handleSearch}>
                     <div className='flex items-center text-lg border px-3 w-fit'>
                         <input
                             className='outline-none w-[200px] py-1 '

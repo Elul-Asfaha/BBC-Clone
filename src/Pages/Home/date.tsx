@@ -29,11 +29,14 @@ const DateComponent = () => {
             {dayName.map(
                 (item, index) =>
                     index === date.getDay() && (
-                        <div>{item + "," + " " + date.getDate()}</div>
+                        <div key={index}>
+                            {item + "," + " " + date.getDate()}
+                        </div>
                     )
             )}
             {monthNames.map(
-                (item, index) => index === date.getMonth() && <div>{item}</div>
+                (item, index) =>
+                    index === date.getMonth() && <div key={index}>{item}</div>
             )}
         </div>
     );

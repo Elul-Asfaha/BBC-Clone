@@ -1,98 +1,30 @@
 import CardHero from "../../components/CardHero";
 import Featured from "../../components/Featured";
 import DateComponent from "./date";
-import Weather from "./Weather";
+import Reel from "./reel";
+import Weather from "./weather";
+import { FeatureDetails, cardDetails } from "../../data";
+
+type featuredDataType = {
+    type: string;
+    featureData: {
+        imgUrl: string;
+        title: string;
+        description: string;
+        category: string;
+    }[];
+};
+type cardDetailsType = {
+    imgUrl: string;
+    title: string;
+    link: string;
+    category: string;
+    main?: boolean;
+};
 
 const Home = () => {
-    const cardFirst = [
-        {
-            imgUrl: "https://source.unsplash.com/1700x1000?",
-            category: "africa",
-            title: "news",
-
-            link: "https://www.bbc.com/news/live/world-africa-66815068",
-        },
-    ];
-    const FeatureDetails = [
-        {
-            type: "News",
-            featureData: [
-                {
-                    imgUrl: "https://source.unsplash.com/1700x1000?",
-                    title: "news",
-                    description:
-                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                    category: "asdasdd",
-                },
-                {
-                    imgUrl: "https://source.unsplash.com/1700x1000?",
-                    title: "news",
-                    description:
-                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                    category: "asdasdd",
-                },
-                {
-                    imgUrl: "https://source.unsplash.com/1700x1000?",
-                    title: "new",
-                    description:
-                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                    category: "asdasdd",
-                },
-            ],
-        },
-        {
-            type: "Sports",
-            featureData: [
-                {
-                    imgUrl: "https://source.unsplash.com/1700x1000?",
-                    title: "basketball",
-                    description:
-                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                    category: "asdasdd",
-                },
-                {
-                    imgUrl: "https://source.unsplash.com/1700x1000?",
-                    title: "soccer",
-                    description:
-                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                    category: "asdasdd",
-                },
-                {
-                    imgUrl: "https://source.unsplash.com/1700x1000?",
-                    title: "tennis",
-                    description:
-                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                    category: "asdasdd",
-                },
-            ],
-        },
-        {
-            type: "Weather",
-            featureData: [
-                {
-                    imgUrl: "https://source.unsplash.com/1700x1000?",
-                    title: "india weather",
-                    description:
-                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                    category: "africa",
-                },
-                {
-                    imgUrl: "https://source.unsplash.com/1700x1000?",
-                    title: "africa weather",
-                    description:
-                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                    category: "asdasdd",
-                },
-                {
-                    imgUrl: "https://source.unsplash.com/1700x1000?",
-                    title: "america weather",
-                    description:
-                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                    category: "asdasdd",
-                },
-            ],
-        },
-    ];
+    const cardData: cardDetailsType[] = cardDetails;
+    const featuredData: featuredDataType[] = FeatureDetails;
     return (
         <div className='max-w-[1300px] mx-auto p-5 flex flex-col gap-5'>
             <div className='flex justify-between pt-5 text-xl leading-6'>
@@ -105,50 +37,28 @@ const Home = () => {
             </div>
             <div className='grid lg:grid-cols-2 gap-5'>
                 <CardHero
-                    key={1}
-                    imgUrl={cardFirst[0].imgUrl}
-                    title={cardFirst[0].title}
-                    category={cardFirst[0].category}
-                    link={cardFirst[0].link}
+                    key={cardData[0].title}
+                    imgUrl={cardData[0].imgUrl}
+                    title={cardData[0].title}
+                    category={cardData[0].category}
+                    link={cardData[0].link}
                     main={true}
+                    description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia a dolor labore tempore fugit sunt.'
                 />
-                <div className='grid sm:grid-cols-2 gap-5'>
-                    <CardHero
-                        key={1}
-                        imgUrl={cardFirst[0].imgUrl}
-                        title={cardFirst[0].title}
-                        category={cardFirst[0].category}
-                        link={cardFirst[0].link}
-                        main={false}
-                    />
-                    <CardHero
-                        key={1}
-                        imgUrl={cardFirst[0].imgUrl}
-                        title={cardFirst[0].title}
-                        category={cardFirst[0].category}
-                        link={cardFirst[0].link}
-                        main={false}
-                    />
-                    <CardHero
-                        key={1}
-                        imgUrl={cardFirst[0].imgUrl}
-                        title={cardFirst[0].title}
-                        category={cardFirst[0].category}
-                        link={cardFirst[0].link}
-                        main={false}
-                    />
-                    <CardHero
-                        key={1}
-                        imgUrl={cardFirst[0].imgUrl}
-                        title={cardFirst[0].title}
-                        category={cardFirst[0].category}
-                        link={cardFirst[0].link}
-                        main={false}
-                    />
+                <div className='grid grid-cols-2 gap-5'>
+                    {cardData.map((items, index) => (
+                        <CardHero
+                            key={index}
+                            imgUrl={items.imgUrl}
+                            title={items.title}
+                            category={items.category}
+                            link={items.link}
+                        />
+                    ))}
                 </div>
             </div>
             <div className='flex flex-col gap-5'>
-                {FeatureDetails.map((items, index) => (
+                {featuredData.map((items, index) => (
                     <Featured
                         key={index}
                         type={items.type}
@@ -157,6 +67,7 @@ const Home = () => {
                 ))}
             </div>
             <Weather />
+            <Reel />
         </div>
     );
 };
