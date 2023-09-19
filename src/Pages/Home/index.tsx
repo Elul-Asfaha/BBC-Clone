@@ -1,4 +1,5 @@
 import CardHero from "../../components/CardHero";
+import Featured from "../../components/Featured";
 import DateComponent from "./date";
 
 const Home = () => {
@@ -9,6 +10,86 @@ const Home = () => {
             title: "Lorem ipsum dolor sit amet.",
 
             link: "https://www.bbc.com/news/live/world-africa-66815068",
+        },
+    ];
+    const FeatureDetails = [
+        {
+            type: "News",
+            featureData: [
+                {
+                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                    title: "asdasds",
+                    description:
+                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+                    category: "asdasdd",
+                },
+                {
+                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                    title: "asdasds",
+                    description:
+                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+                    category: "asdasdd",
+                },
+                {
+                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                    title: "asdasds",
+                    description:
+                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+                    category: "asdasdd",
+                },
+            ],
+        },
+        {
+            type: "Sports",
+            featureData: [
+                {
+                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                    title: "asdasds",
+                    description:
+                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+                    category: "asdasdd",
+                },
+                {
+                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                    title: "asdasds",
+                    description:
+                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+                    category: "asdasdd",
+                },
+                {
+                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                    title: "asdasds",
+                    description:
+                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+                    category: "asdasdd",
+                },
+            ],
+        },
+        {
+            type: "Weather",
+            featureData: [
+                {
+                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                    title: "asdasds",
+                    description:
+                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+                    category: "asdasdd",
+                },
+                {
+                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                    title: "asdasds",
+                    description:
+                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+                    category: "asdasdd",
+                },
+                {
+                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                    title: "asdasds",
+                    description:
+                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+                    category: "asdasdd",
+                },
+            ],
         },
     ];
     return (
@@ -64,6 +145,15 @@ const Home = () => {
                         main={false}
                     />
                 </div>
+            </div>
+            <div className='flex flex-col gap-5'>
+                {FeatureDetails.map((items, index) => (
+                    <Featured
+                        key={index}
+                        type={items.type}
+                        featureData={items.featureData}
+                    />
+                ))}
             </div>
         </div>
     );
