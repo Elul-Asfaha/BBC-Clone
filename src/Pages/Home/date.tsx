@@ -25,7 +25,7 @@ const DateComponent = () => {
     ];
 
     return (
-        <div className='flex gap-2'>
+        <div className='flex gap-1 text-gray-600'>
             {dayName.map(
                 (item, index) =>
                     index === date.getDay() && (

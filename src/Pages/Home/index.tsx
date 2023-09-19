@@ -1,13 +1,14 @@
 import CardHero from "../../components/CardHero";
 import Featured from "../../components/Featured";
 import DateComponent from "./date";
+import Weather from "./Weather";
 
 const Home = () => {
     const cardFirst = [
         {
-            imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+            imgUrl: "https://source.unsplash.com/1700x1000?",
             category: "africa",
-            title: "Lorem ipsum dolor sit amet.",
+            title: "news",
 
             link: "https://www.bbc.com/news/live/world-africa-66815068",
         },
@@ -17,22 +18,22 @@ const Home = () => {
             type: "News",
             featureData: [
                 {
-                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-                    title: "asdasds",
+                    imgUrl: "https://source.unsplash.com/1700x1000?",
+                    title: "news",
                     description:
                         "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
                     category: "asdasdd",
                 },
                 {
-                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-                    title: "asdasds",
+                    imgUrl: "https://source.unsplash.com/1700x1000?",
+                    title: "news",
                     description:
                         "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
                     category: "asdasdd",
                 },
                 {
-                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-                    title: "asdasds",
+                    imgUrl: "https://source.unsplash.com/1700x1000?",
+                    title: "new",
                     description:
                         "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
                     category: "asdasdd",
@@ -43,22 +44,22 @@ const Home = () => {
             type: "Sports",
             featureData: [
                 {
-                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-                    title: "asdasds",
+                    imgUrl: "https://source.unsplash.com/1700x1000?",
+                    title: "basketball",
                     description:
                         "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
                     category: "asdasdd",
                 },
                 {
-                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-                    title: "asdasds",
+                    imgUrl: "https://source.unsplash.com/1700x1000?",
+                    title: "soccer",
                     description:
                         "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
                     category: "asdasdd",
                 },
                 {
-                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-                    title: "asdasds",
+                    imgUrl: "https://source.unsplash.com/1700x1000?",
+                    title: "tennis",
                     description:
                         "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
                     category: "asdasdd",
@@ -69,22 +70,22 @@ const Home = () => {
             type: "Weather",
             featureData: [
                 {
-                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-                    title: "asdasds",
+                    imgUrl: "https://source.unsplash.com/1700x1000?",
+                    title: "india weather",
+                    description:
+                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+                    category: "africa",
+                },
+                {
+                    imgUrl: "https://source.unsplash.com/1700x1000?",
+                    title: "africa weather",
                     description:
                         "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
                     category: "asdasdd",
                 },
                 {
-                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-                    title: "asdasds",
-                    description:
-                        "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                    category: "asdasdd",
-                },
-                {
-                    imgUrl: "https://images.unsplash.com/photo-1588230115883-df1aaae8f9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-                    title: "asdasds",
+                    imgUrl: "https://source.unsplash.com/1700x1000?",
+                    title: "america weather",
                     description:
                         "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
                     category: "asdasdd",
@@ -93,8 +94,8 @@ const Home = () => {
         },
     ];
     return (
-        <div className='max-w-[1650px] mx-auto p-5 flex flex-col gap-5'>
-            <div className='flex justify-between text-2xl leading-6'>
+        <div className='max-w-[1300px] mx-auto p-5 flex flex-col gap-5'>
+            <div className='flex justify-between pt-5 text-xl leading-6'>
                 <div className='font-bold text-gray-800 '>
                     Welcome to BBC.com
                 </div>
@@ -155,6 +156,7 @@ const Home = () => {
                     />
                 ))}
             </div>
+            <Weather />
         </div>
     );
 };

@@ -102,7 +102,7 @@ const Nav = () => {
     ];
     return (
         <div className='bg-black text-white'>
-            <div className='mx-auto hidden md:flex lg:max-w-[1400px] gap-5 p-4 items-center'>
+            <div className='mx-auto hidden md:flex lg:max-w-[1300px] gap-5 p-4 items-center'>
                 <>
                     <div className='flex gap-2'>
                         <p className='bg-white text-black px-3 py-1 font-bold text-2xl'>
@@ -139,8 +139,8 @@ const Nav = () => {
                 </div>
             </div>
 
-            {!open && (
-                <div className='hidden md:flex justify-between p-4 mx-auto lg:max-w-[1400px]'>
+            {open && (
+                <div className='hidden md:flex justify-between p-4 mx-auto lg:max-w-[1300px]'>
                     <div className='flex gap-5 items-center'>
                         {navLinks2.map((items, index) => (
                             <div key={index}>
@@ -161,7 +161,7 @@ const Nav = () => {
                     </button>
                 </div>
             )}
-            <div className='md:hidden mx-auto lg:max-w-[1400px] flex gap-5 p-4 items-center justify-between'>
+            <div className='md:hidden mx-auto lg:max-w-[1300px] flex gap-5 p-4 items-center justify-between'>
                 <>
                     <div className='flex items-center gap-2'>
                         <FaUserAlt className='text-3xl' />
@@ -191,8 +191,8 @@ const Nav = () => {
                 </div>
             </div>
 
-            {!open && (
-                <div className='flex md:hidden justify-between p-4 mx-auto lg:max-w-[1400px]'>
+            {open && (
+                <div className='flex md:hidden justify-between p-4 mx-auto lg:max-w-[1300px]'>
                     <div className='flex flex-wrap gap-5 items-center'>
                         {mobileNav.map((items, index) => (
                             <div key={index}>

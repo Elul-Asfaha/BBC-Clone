@@ -1,7 +1,7 @@
 const Feature = () => {
     return (
         <div>
-            <img src='' alt='' srcset='' />
+            <img src='' alt='' />
             <p></p>
             <p></p>
             <p></p>
