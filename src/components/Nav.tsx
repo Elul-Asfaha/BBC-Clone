@@ -8,6 +8,7 @@ import { FiSearch } from "react-icons/fi";
 import { BsThreeDots } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
 const Nav = () => {
     const [open, setOpen] = useState(false);
     const navLinks: NavLinkTypes[] = [
@@ -55,9 +56,53 @@ const Nav = () => {
             nav: "/",
         },
     ];
+
+    const mobileNav: NavLinkTypes[] = [
+        {
+            name: "Home",
+            nav: "/",
+        },
+        {
+            name: "News",
+            nav: "/",
+        },
+        {
+            name: "Sport",
+            nav: "/",
+        },
+        {
+            name: "Reel",
+            nav: "/",
+        },
+
+        {
+            name: "Worklife",
+            nav: "/",
+        },
+        {
+            name: "Travel",
+            nav: "/",
+        },
+        {
+            name: "Future",
+            nav: "/",
+        },
+        {
+            name: "Tv",
+            nav: "/",
+        },
+        {
+            name: "Weather",
+            nav: "/",
+        },
+        {
+            name: "Sounds",
+            nav: "/",
+        },
+    ];
     return (
         <div className='bg-black text-white'>
-            <div className='mx-auto lg:max-w-[1400px] flex gap-5 p-4 items-center'>
+            <div className='mx-auto hidden md:flex lg:max-w-[1400px] gap-5 p-4 items-center'>
                 <>
                     <div className='flex gap-2'>
                         <p className='bg-white text-black px-3 py-1 font-bold text-2xl'>
@@ -94,27 +139,80 @@ const Nav = () => {
                 </div>
             </div>
 
-            <div
-                className={`${
-                    !open ? "hidden" : "flex"
-                } justify-between p-4 mx-auto lg:max-w-[1400px]`}
-            >
-                <div className='flex gap-5 items-center'>
-                    {navLinks2.map((items, index) => (
-                        <div key={index}>
-                            <Link to={items.nav}>
-                                <p className='hover:border-b hover:border-b-white duration-200 ease-in-out'>
-                                    {items.name}
-                                </p>
-                            </Link>
-                        </div>
-                    ))}
-                </div>
+            {!open && (
+                <div className='hidden md:flex justify-between p-4 mx-auto lg:max-w-[1400px]'>
+                    <div className='flex gap-5 items-center'>
+                        {navLinks2.map((items, index) => (
+                            <div key={index}>
+                                <Link to={items.nav}>
+                                    <p className='hover:border-b hover:border-b-white duration-200 ease-in-out'>
+                                        {items.name}
+                                    </p>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
 
-                <button className='text-3xl ' onClick={() => setOpen(false)}>
-                    <AiOutlineClose />
-                </button>
+                    <button
+                        className='text-3xl '
+                        onClick={() => setOpen(!open)}
+                    >
+                        <AiOutlineClose />
+                    </button>
+                </div>
+            )}
+            <div className='md:hidden mx-auto lg:max-w-[1400px] flex gap-5 p-4 items-center justify-between'>
+                <>
+                    <div className='flex items-center gap-2'>
+                        <FaUserAlt className='text-3xl' />
+                        <p className='hidden lg:flex'>Sign in</p>
+                    </div>
+                </>
+                <>
+                    <div className='flex gap-2'>
+                        <p className='bg-white text-black px-3 py-1 font-bold text-2xl'>
+                            B
+                        </p>
+                        <p className='bg-white text-black  px-3 py-1 font-bold text-2xl'>
+                            B
+                        </p>
+                        <p className='bg-white text-black  px-3 py-1 font-bold text-2xl'>
+                            C
+                        </p>
+                    </div>
+                </>
+                <div className='flex gap-5 items-center w-fit'>
+                    <button className='text-3xl' onClick={() => setOpen(!open)}>
+                        <RxHamburgerMenu />
+                    </button>
+                    <div className='text-3xl'>
+                        <FiSearch />
+                    </div>
+                </div>
             </div>
+
+            {!open && (
+                <div className='flex md:hidden justify-between p-4 mx-auto lg:max-w-[1400px]'>
+                    <div className='flex flex-wrap gap-5 items-center'>
+                        {mobileNav.map((items, index) => (
+                            <div key={index}>
+                                <Link to={items.nav}>
+                                    <p className='hover:border-b hover:border-b-white duration-200 ease-in-out'>
+                                        {items.name}
+                                    </p>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+
+                    <button
+                        className='text-3xl '
+                        onClick={() => setOpen(!open)}
+                    >
+                        <AiOutlineClose />
+                    </button>
+                </div>
+            )}
         </div>
     );
 };
