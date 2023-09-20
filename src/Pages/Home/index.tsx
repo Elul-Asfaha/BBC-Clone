@@ -4,6 +4,7 @@ import DateComponent from "./date";
 import Reel from "./reel";
 import Weather from "./weather";
 import { FeatureDetails, cardDetails } from "../../data";
+import Editor from "./editorsPick";
 
 type featuredDataType = {
     type: string;
@@ -68,6 +69,13 @@ const Home = () => {
             </div>
             <Weather />
             <Reel />
+            <div className='w-full max-w-[1300px] px-5 mx-auto flex flex-col gap-5'>
+                <Featured
+                    type={featuredData[0].type}
+                    featureData={featuredData[0].featureData}
+                />
+            </div>
+            <Editor />
         </div>
     );
 };

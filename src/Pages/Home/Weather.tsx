@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import { BsSearch, BsCloudDrizzle } from "react-icons/bs";
 const Weather = () => {
     const [openSearch, setOpenSearch] = useState(false);
     const [searchWeather, setSearchWeather] = useState("Addis Ababa");
     const [displayWeather, setDisplayWeather] = useState("Addis Ababa");
 
-    const handleSearch = (e) => {
-        e.preventDefault();
+    const handleSearch = (event: FormEvent<HTMLInputElement>) => {
+        event.preventDefault();
         setDisplayWeather(searchWeather);
     };
     return (
@@ -23,7 +23,7 @@ const Weather = () => {
                 </button>
             </div>
             {openSearch && (
-                <form onSubmit={handleSearch}>
+                <form onSubmit={() => handleSearch}>
                     <div className='flex items-center text-lg border px-3 w-fit'>
                         <input
                             className='outline-none w-[200px] py-1 '

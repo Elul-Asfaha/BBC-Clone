@@ -19,7 +19,7 @@ const CardHero = ({
         <Link to={link}>
             <div
                 className={`w-full relative flex ${
-                    main ? "h-[400px]" : "md:h-[190px]"
+                    main ? "min-h-[400px]" : "md:h-[190px]"
                 }`}
             >
                 <img
@@ -27,7 +27,7 @@ const CardHero = ({
                     alt={title}
                     className={
                         main
-                            ? `w-full object-cover bg-gray-300`
+                            ? `w-full object-container bg-gray-300`
                             : "hidden md:flex md:w-full md:object-cover "
                     }
                 />

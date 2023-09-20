@@ -1,16 +1,24 @@
 type featureType = {
-    imgDisp: string;
-    title: string;
-    description: string;
-    category: string;
+    imgDisp?: string;
+    title?: string;
+    description?: string;
+    category?: string;
+    height?: number;
 };
-const Feature = ({ imgDisp, title, description, category }: featureType) => {
+const Feature = ({
+    imgDisp,
+    title,
+    description,
+    category,
+    height = 200,
+}: featureType) => {
     return (
         <div className='flex flex-col md:gap-2 border-b md:border-none pb-2 md:pb-0'>
             <img
                 src={imgDisp}
                 alt={title}
-                className='h-[200px] object-cover w-full hidden md:flex bg-gray-300'
+                className='object-cover w-full hidden md:flex bg-gray-300'
+                height={height}
             />
             <p className='font-bold text-xl'>{title}</p>
             <p className='text-gray-700'>{description}</p>
