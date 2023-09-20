@@ -2,9 +2,9 @@ import CardHero from "../../components/CardHero";
 import Featured from "../../components/Featured";
 import DateComponent from "./date";
 import Reel from "./reel";
-import Weather from "./weather";
 import { FeatureDetails, cardDetails } from "../../data";
 import Editor from "./editorsPick";
+import Weather from "./weather";
 
 type featuredDataType = {
     type: string;
