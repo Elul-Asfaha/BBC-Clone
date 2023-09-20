@@ -13,24 +13,40 @@ const CardHero = ({
     imgUrl,
     link,
     description,
-    main,
+    main = false,
 }: CardHeroType) => {
     return (
         <Link to={link}>
             <div
                 className={`w-full relative flex ${
-                    main ? "h-[400px]" : "h-[190px]"
+                    main ? "h-[400px]" : "md:h-[190px]"
                 }`}
             >
                 <img
                     src={imgUrl + title}
                     alt={title}
-                    className='w-full object-cover bg-gray-300'
+                    className={
+                        main
+                            ? `w-full object-cover bg-gray-300`
+                            : "hidden md:flex"
+                    }
                 />
-                <div className='absolute flex flex-col gap-y-2 justify-end py-5 bottom-0 top-0 left-0 right-0 pl-3 text-white text-lg bg-black/40'>
-                    <div className='text-xl font-bold'>{title}</div>
+                <div
+                    className={`${
+                        main
+                            ? "absolute flex flex-col justify-end inset-0 p-5 bg-black/30 text-white"
+                            : "w-full md:p-5 md:absolute flex flex-col md:justify-end md:inset-0 gap-2 md:bg-black/30 md:text-white border-b pb-3 md:border-none"
+                    }`}
+                >
+                    <div className='text-2xl font-bold'>{title}</div>
                     {main && <div className='text-gray-200'>{description}</div>}
-                    <div className='border-l-2 border-red-500 pl-3 leading-5 text-gray-200'>
+                    <div
+                        className={`border-l-2 border-red-500 pl-3 leading-4 uppercase text-sm ${
+                            main
+                                ? "text-gray-400"
+                                : "text-gray-800 md:text-gray-400"
+                        }`}
+                    >
                         {category}
                     </div>
                 </div>

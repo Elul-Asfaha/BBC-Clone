@@ -45,7 +45,7 @@ const Home = () => {
                     main={true}
                     description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia a dolor labore tempore fugit sunt.'
                 />
-                <div className='grid grid-cols-2 gap-5'>
+                <div className='grid md:grid-cols-2 md:gap-5'>
                     {cardData.map((items, index) => (
                         <CardHero
                             key={index}
