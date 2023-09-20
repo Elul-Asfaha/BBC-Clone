@@ -102,7 +102,7 @@ const Nav = () => {
     ];
     return (
         <div className='bg-black text-white'>
-            <div className='mx-auto hidden md:flex lg:max-w-[1300px] gap-5 p-4 items-center'>
+            <div className='mx-auto hidden md:flex lg:max-w-[1300px] py-3 gap-5  items-center'>
                 <>
                     <div className='flex gap-2'>
                         <p className='bg-white text-black px-3 py-1 font-bold text-2xl'>
@@ -122,7 +122,7 @@ const Nav = () => {
                 </>
                 <div className='flex-1 flex gap-5 justify-between items-center'>
                     {navLinks.map((items, index) => (
-                        <div key={index}>
+                        <div key={index} className='text-sm'>
                             <Link to={items.nav}>
                                 <p className='hover:border-b hover:border-b-white duration-200 ease-in-out'>
                                     {items.name}
@@ -134,8 +134,12 @@ const Nav = () => {
                         <BsThreeDots />
                     </button>
                 </div>
-                <div className='text-3xl'>
+                <div className='text-3xl lg:hidden'>
                     <FiSearch />
+                </div>
+                <div className='hidden lg:flex items-center py-2 px-3 w-[230px] text-sm bg-gray-800 gap-2'>
+                    <FiSearch className='text-xl' />
+                    <p>Search BBC</p>
                 </div>
             </div>
 

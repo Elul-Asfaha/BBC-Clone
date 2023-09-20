@@ -28,7 +28,7 @@ const CardHero = ({
                     className={
                         main
                             ? `w-full object-cover bg-gray-300`
-                            : "hidden md:flex"
+                            : "hidden md:flex md:w-full md:object-cover "
                     }
                 />
                 <div
