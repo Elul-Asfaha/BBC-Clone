@@ -4,7 +4,7 @@ import DateComponent from "./date";
 import Reel from "./reel";
 import { FeatureDetails, cardDetails } from "../../data";
 import Editor from "./editorsPick";
-import Weather from "./weather";
+import Weather from "./Weather";
 
 type featuredDataType = {
     type: string;
