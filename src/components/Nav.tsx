@@ -102,7 +102,7 @@ const Nav = () => {
     ];
     return (
         <div className='bg-black text-white'>
-            <div className='mx-auto hidden md:flex lg:max-w-[1300px] py-3 gap-5  items-center'>
+            <div className='mx-auto  px-5 hidden md:flex lg:max-w-[1300px] py-3 gap-5  items-center'>
                 <>
                     <div className='flex gap-2'>
                         <p className='bg-white text-black px-3 py-1 font-bold text-2xl'>

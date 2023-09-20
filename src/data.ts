@@ -3,25 +3,27 @@ export const FeatureDetails = [
         type: "News",
         featureData: [
             {
+                id: 1,
                 imgUrl: "https://source.unsplash.com/1700x",
-                title: "news",
+                title: "eu orci mauris lacinia sapien quis libero nullam",
+                category: "Europe",
                 description:
-                    "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                category: "asdasdd",
+                    "nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus",
             },
             {
+                id: 2,
                 imgUrl: "https://source.unsplash.com/1700x",
-                title: "news",
-                description:
-                    "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                category: "asdasdd",
+                title: "suspendisse accumsan tortor quis turpis sed ante vivamus",
+                category: "Middle East",
+                description: "lectus pellentesque eget nunc donec quis orci",
             },
             {
+                id: 3,
                 imgUrl: "https://source.unsplash.com/1700x",
-                title: "new",
+                title: "justo etiam pretium iaculis justo in",
+                category: "Africa",
                 description:
-                    "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                category: "asdasdd",
+                    "cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla",
             },
         ],
     },
@@ -29,25 +31,27 @@ export const FeatureDetails = [
         type: "Sports",
         featureData: [
             {
+                id: 1,
                 imgUrl: "https://source.unsplash.com/1700x",
-                title: "basketball",
+                title: "eu orci mauris lacinia sapien quis libero nullam",
+                category: "tennis",
                 description:
-                    "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                category: "asdasdd",
+                    "nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus",
             },
             {
+                id: 2,
                 imgUrl: "https://source.unsplash.com/1700x",
-                title: "soccer",
-                description:
-                    "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                category: "asdasdd",
+                title: "suspendisse accumsan tortor quis turpis sed ante vivamus",
+                category: "basketball",
+                description: "lectus pellentesque eget nunc donec quis orci",
             },
             {
+                id: 3,
                 imgUrl: "https://source.unsplash.com/1700x",
-                title: "tennis",
+                title: "justo etiam pretium iaculis justo in",
+                category: "scoccer",
                 description:
-                    "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                category: "asdasdd",
+                    "cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla",
             },
         ],
     },
@@ -55,57 +59,58 @@ export const FeatureDetails = [
         type: "Weather",
         featureData: [
             {
+                id: 1,
                 imgUrl: "https://source.unsplash.com/1700x",
-                title: "india weather",
+                title: "eu orci mauris lacinia sapien quis libero nullam",
+                category: "Sweden",
                 description:
-                    "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                category: "africa",
+                    "nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus",
             },
             {
+                id: 2,
                 imgUrl: "https://source.unsplash.com/1700x",
-                title: "africa weather",
-                description:
-                    "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                category: "asdasdd",
+                title: "suspendisse accumsan tortor quis turpis sed ante vivamus",
+                category: "China",
+                description: "lectus pellentesque eget nunc donec quis orci",
             },
             {
+                id: 3,
                 imgUrl: "https://source.unsplash.com/1700x",
-                title: "america weather",
+                title: "justo etiam pretium iaculis justo in",
+                category: "Indonesia",
                 description:
-                    "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-                category: "asdasdd",
+                    "cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla",
             },
         ],
     },
 ];
 export const cardDetails = [
     {
+        id: 1,
         imgUrl: "https://source.unsplash.com/1700x",
-        category: "africa",
-        title: "news",
-        link: "https://www.bbc.com/news/live/world-africa-66815068",
-    },
-
-    {
-        imgUrl: "https://source.unsplash.com/1700x",
-        category: "africa",
-        title: "news",
-
-        link: "https://www.bbc.com/news/live/world-africa-66815068",
-    },
-
-    {
-        imgUrl: "https://source.unsplash.com/1700x",
-        category: "africa",
-        title: "news",
-
+        title: "suscipit ligula in",
+        category: "China",
         link: "https://www.bbc.com/news/live/world-africa-66815068",
     },
     {
+        id: 2,
         imgUrl: "https://source.unsplash.com/1700x",
-        category: "africa",
-        title: "news",
-
+        title: "eu tincidunt in leo",
+        category: "China",
+        link: "https://www.bbc.com/news/live/world-africa-66815068",
+    },
+    {
+        id: 3,
+        imgUrl: "https://source.unsplash.com/1700x",
+        title: "sem sed sagittis nam congue risus",
+        category: "Madagascar",
+        link: "https://www.bbc.com/news/live/world-africa-66815068",
+    },
+    {
+        id: 4,
+        imgUrl: "https://source.unsplash.com/1700x",
+        title: "diam in magna bibendum imperdiet nullam",
+        category: "Sweden",
         link: "https://www.bbc.com/news/live/world-africa-66815068",
     },
 ];

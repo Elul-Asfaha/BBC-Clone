@@ -39,7 +39,7 @@ const CardHero = ({
                 <div
                     className={`${
                         main
-                            ? "absolute flex flex-col justify-end inset-0 p-5 bg-black/30 text-white"
+                            ? "absolute flex flex-col justify-end inset-0 p-5 bg-black/30 text-white gap-2"
                             : "w-full md:p-5 md:absolute flex flex-col md:justify-end md:inset-0 gap-2 md:bg-black/30 md:text-white border-b pb-3 md:border-none"
                     }`}
                 >
