@@ -23,7 +23,12 @@ const CardHero = ({
                 }`}
             >
                 <img
-                    src={imgUrl + title}
+                    src={
+                        imgUrl +
+                        Math.floor(Math.random() * (1000 - 900 + 1) + 900) +
+                        "?" +
+                        title
+                    }
                     alt={title}
                     className={
                         main

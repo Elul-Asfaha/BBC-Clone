@@ -10,6 +10,7 @@ type featured = {
     }[];
 };
 const Featured = ({ type, featureData }: featured) => {
+    console.log(Math.floor(Math.random() * (1000 - 900 + 1) + 900));
     return (
         <div className='flex flex-col gap-5'>
             <p className='border-l-2 text-gray-800 hover:text-black border-red-500 pl-2 leading-6 text-3xl font-bold'>
@@ -19,7 +20,12 @@ const Featured = ({ type, featureData }: featured) => {
                 {featureData.map((items, index) => (
                     <Feature
                         key={index}
-                        imgDisp={items.imgUrl + items.title}
+                        imgDisp={
+                            items.imgUrl +
+                            Math.floor(Math.random() * (1000 - 900 + 1) + 900) +
+                            "?" +
+                            items.title
+                        }
                         title={items.title}
                         description={items.description}
                         category={items.category}
