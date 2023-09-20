@@ -5,12 +5,12 @@ const Weather = () => {
     const [searchWeather, setSearchWeather] = useState("Addis Ababa");
     const [displayWeather, setDisplayWeather] = useState("Addis Ababa");
 
-    const handleSearch = (e: Event) => {
+    const handleSearch = (e) => {
         e.preventDefault();
         setDisplayWeather(searchWeather);
     };
     return (
-        <div className='flex flex-col gap-5'>
+        <div className='w-full max-w-[1300px] mx-auto flex flex-col gap-5'>
             <div className='flex items-center gap-5'>
                 <p className='text-gray-800 font-bold  p-1'>
                     {displayWeather} WEATHER
@@ -23,7 +23,7 @@ const Weather = () => {
                 </button>
             </div>
             {openSearch && (
-                <form onSubmit={(e) => handleSearch}>
+                <form onSubmit={handleSearch}>
                     <div className='flex items-center text-lg border px-3 w-fit'>
                         <input
                             className='outline-none w-[200px] py-1 '

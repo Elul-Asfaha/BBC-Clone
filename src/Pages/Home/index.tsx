@@ -26,16 +26,16 @@ const Home = () => {
     const cardData: cardDetailsType[] = cardDetails;
     const featuredData: featuredDataType[] = FeatureDetails;
     return (
-        <div className='max-w-[1300px] mx-auto p-5 flex flex-col gap-5'>
-            <div className='flex justify-between pt-5 text-xl leading-6'>
-                <div className='font-bold text-gray-800 '>
+        <div className='w-full flex flex-col gap-5'>
+            <div className='w-full max-w-[1300px] mx-auto flex justify-between pt-5 text-xl leading-6'>
+                <div className='font-bold text-gray-800'>
                     Welcome to BBC.com
                 </div>
-                <div>
+                <div className=''>
                     <DateComponent />
                 </div>
             </div>
-            <div className='grid lg:grid-cols-2 gap-5'>
+            <div className='w-full max-w-[1300px] mx-auto grid lg:grid-cols-2 gap-5'>
                 <CardHero
                     key={cardData[0].title}
                     imgUrl={cardData[0].imgUrl}
@@ -57,7 +57,7 @@ const Home = () => {
                     ))}
                 </div>
             </div>
-            <div className='flex flex-col gap-5'>
+            <div className='w-full max-w-[1300px] mx-auto flex flex-col gap-5'>
                 {featuredData.map((items, index) => (
                     <Featured
                         key={index}
