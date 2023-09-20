@@ -18,7 +18,7 @@ const CardHero = ({
     return (
         <Link to={link}>
             <div
-                className={`w-full relative flex ${
+                className={`w-full relative flex hover:brightness-50 ${
                     main ? "min-h-[400px]" : "md:h-[190px]"
                 }`}
             >
@@ -48,8 +48,8 @@ const CardHero = ({
                     <div
                         className={`border-l-2 border-red-500 pl-3 leading-4 uppercase text-sm ${
                             main
-                                ? "text-gray-400"
-                                : "text-gray-800 md:text-gray-400"
+                                ? "text-gray-300"
+                                : "text-gray-800 md:text-gray-300"
                         }`}
                     >
                         {category}
