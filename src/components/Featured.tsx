@@ -11,7 +11,7 @@ type featured = {
 };
 const Featured = ({ type, featureData }: featured) => {
     return (
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 py-5'>
             <p className='border-l-2 text-gray-800 hover:text-black border-red-500 pl-2 leading-6 text-3xl font-bold'>
                 {type}
             </p>

@@ -16,7 +16,7 @@ const CardHero = ({
     main = false,
 }: CardHeroType) => {
     return (
-        <Link to={link}>
+        <Link to={link} className='w-full'>
             <div
                 className={`w-full relative flex hover:brightness-50 ${
                     main ? "min-h-[400px]" : "md:h-[190px]"

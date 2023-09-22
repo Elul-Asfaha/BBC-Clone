@@ -122,3 +122,54 @@ export const editorsPicks = {
     category: "Future",
     link: " ",
 };
+
+export const featuresDetail = [
+    {
+        imgUrl: "https://source.unsplash.com/1700x",
+        title: "How atom bomb sensors found blue whales",
+        description:
+            "The aim was to hear nuclear weapons tests. They discoverd something else",
+        category: "Future",
+        link: " ",
+    },
+    {
+        imgUrl: "https://source.unsplash.com/1700x",
+        title: "How atom bomb sensors found blue whales",
+        description:
+            "The aim was to hear nuclear weapons tests. They discoverd something else",
+        category: "Future",
+        link: " ",
+    },
+    {
+        imgUrl: "https://source.unsplash.com/1700x",
+        title: "How atom bomb sensors found blue whales",
+        description:
+            "The aim was to hear nuclear weapons tests. They discoverd something else",
+        category: "Future",
+        link: " ",
+    },
+    {
+        imgUrl: "https://source.unsplash.com/1700x",
+        title: "How atom bomb sensors found blue whales",
+        description:
+            "The aim was to hear nuclear weapons tests. They discoverd something else",
+        category: "Future",
+        link: " ",
+    },
+    {
+        imgUrl: "https://source.unsplash.com/1700x",
+        title: "How atom bomb sensors found blue whales",
+        description:
+            "The aim was to hear nuclear weapons tests. They discoverd something else",
+        category: "Future",
+        link: " ",
+    },
+    {
+        imgUrl: "https://source.unsplash.com/1700x",
+        title: "How atom bomb sensors found blue whales",
+        description:
+            "The aim was to hear nuclear weapons tests. They discoverd something else",
+        category: "Future",
+        link: " ",
+    },
+];

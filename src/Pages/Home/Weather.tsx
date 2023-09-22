@@ -10,7 +10,7 @@ const Weather = () => {
         setDisplayWeather(searchWeather);
     };
     return (
-        <div className='w-full max-w-[1300px] mx-auto px-5 flex flex-col gap-5'>
+        <div className='w-full max-w-[1300px] mx-auto px-5 flex flex-col gap-5 py-5'>
             <div className='flex items-center gap-5'>
                 <p className='text-gray-800 font-bold  p-1'>
                     {displayWeather} WEATHER
