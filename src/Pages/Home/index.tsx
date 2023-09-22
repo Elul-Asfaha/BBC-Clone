@@ -88,7 +88,7 @@ const Home = () => {
                     },
                 ]}
                 sectionDesctiption='The most amazing videos from the BBC'
-                bg_url='https://source.unsplash.com/1700x1000?sunset&snow&mountain'
+                bg_url=''
             />
 
             <div className='w-full max-w-[1300px] md:px-5 mx-auto flex flex-col gap-5'>
@@ -98,6 +98,30 @@ const Home = () => {
                 />
             </div>
             <Editor />
+            <CustomSection
+                sectionTitle='Future Planet'
+                buttonName='Visit Future Planet'
+                sectionData={[
+                    {
+                        url: "https://www.youtube.com/watch?v=NW7gnyW1mA8",
+                        desctiption:
+                            "Manchester United players 'remain upset at De Gea exit' amid Onana struggles",
+                    },
+                    {
+                        url: "https://www.youtube.com/watch?v=AlTYtDaZE6c",
+                        desctiption:
+                            "Mexico’s non-human 'Alien-like' beings fake?",
+                    },
+                    {
+                        url: "https://www.youtube.com/watch?v=_IsxNr8CSxk",
+                        desctiption:
+                            "Should We Be Freaking Out About The New COVID Variants?",
+                    },
+                ]}
+                sectionDesctiption='Solutions for a sustaibable world'
+                highlight={true}
+                bg_url=''
+            />
         </div>
     );
 };

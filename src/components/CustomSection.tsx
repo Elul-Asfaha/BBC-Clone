@@ -6,6 +6,7 @@ type customSectionType = {
     sectionData: { desctiption: string; url: string }[];
     buttonName: string;
     bg_url: string;
+    highlight: boolean;
 };
 const CustomSection = ({
     sectionTitle,
@@ -13,14 +14,24 @@ const CustomSection = ({
     bg_url,
     sectionData,
     buttonName,
+    highlight = false,
 }: customSectionType) => {
+    console.log(bg_url);
     return (
         <div
-            className={`bg-[url('${bg_url}')] object-cover bg-no-repeat bg-cover px-5 pt-10 pb-[60px]`}
+            className={`bg-[url('https://source.unsplash.com/1700x1000?sunset&snow&mountain')] object-cover bg-no-repeat bg-cover px-5 pt-10 pb-[60px]`}
         >
             <div className='w-full max-w-[1300px] mx-auto flex flex-col gap-5'>
                 <div className='w-full flex justify-between text-white'>
-                    <p className='text-3xl'>{sectionTitle}</p>
+                    <p
+                        className={`text-3xl ${
+                            highlight
+                                ? "border-2 border-green-800 py-1 px-3"
+                                : ""
+                        }`}
+                    >
+                        {sectionTitle}
+                    </p>
                     <button className='flex px-3 py-1 items-center text-xl rounded-full border border-white'>
                         <p>{buttonName}</p>
                         <BsArrowRight />
