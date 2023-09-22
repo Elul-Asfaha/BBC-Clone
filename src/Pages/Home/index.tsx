@@ -1,10 +1,10 @@
 import CardHero from "../../components/CardHero";
 import Featured from "../../components/Featured";
 import DateComponent from "./date";
-import Reel from "./reel";
 import { FeatureDetails, cardDetails } from "../../data";
 import Editor from "./editorsPick";
 import Weather from "./Weather";
+import CustomSection from "../../components/customSection";
 
 type featuredDataType = {
     type: string;
@@ -28,7 +28,7 @@ const Home = () => {
     const featuredData: featuredDataType[] = FeatureDetails;
     return (
         <div className='w-full flex flex-col gap-5 bg-gray-50'>
-            <div className='w-full max-w-[1300px] px-5 mx-auto flex justify-between pt-5 text-xl leading-6'>
+            <div className='hidden md:flex w-full max-w-[1300px] px-5 mx-auto justify-between pt-5 text-xl leading-6'>
                 <div className='font-bold text-gray-800'>
                     Welcome to BBC.com
                 </div>
@@ -68,7 +68,30 @@ const Home = () => {
                 ))}
             </div>
             <Weather />
-            <Reel />
+            <CustomSection
+                sectionTitle='REEL'
+                buttonName='Visit Reel'
+                sectionData={[
+                    {
+                        url: "https://www.youtube.com/watch?v=NW7gnyW1mA8",
+                        desctiption:
+                            "Manchester United players 'remain upset at De Gea exit' amid Onana struggles",
+                    },
+                    {
+                        url: "https://www.youtube.com/watch?v=AlTYtDaZE6c",
+                        desctiption:
+                            "Mexico’s non-human 'Alien-like' beings fake?",
+                    },
+                    {
+                        url: "https://www.youtube.com/watch?v=_IsxNr8CSxk",
+                        desctiption:
+                            "Should We Be Freaking Out About The New COVID Variants?",
+                    },
+                ]}
+                bg_url="[url('https://source.unsplash.com/1700x1000?sunset&snow&mountain')]"
+                sectionDesctiption='The most amazing videos from the BBC'
+                link='Asdas'
+            />
             <div className='w-full max-w-[1300px] md:px-5 mx-auto flex flex-col gap-5'>
                 <Featured
                     type={featuredData[0].type}

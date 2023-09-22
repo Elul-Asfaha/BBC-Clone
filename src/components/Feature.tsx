@@ -13,7 +13,7 @@ const Feature = ({
     height = 200,
 }: featureType) => {
     return (
-        <div className='flex flex-col justify-between md:gap-2 border-b md:border-none pb-2 md:pb-0'>
+        <div className='flex flex-col justify-between md:gap-2 border-b md:border-none pb-2 md:pb-0 hover:brightness-50'>
             <img
                 src={imgDisp}
                 alt={title}
