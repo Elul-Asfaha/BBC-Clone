@@ -90,7 +90,6 @@ const Home = () => {
                 ]}
                 bg_url="[url('https://source.unsplash.com/1700x1000?sunset&snow&mountain')]"
                 sectionDesctiption='The most amazing videos from the BBC'
-                link='Asdas'
             />
             <div className='w-full max-w-[1300px] md:px-5 mx-auto flex flex-col gap-5'>
                 <Featured

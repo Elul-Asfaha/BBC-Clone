@@ -114,3 +114,11 @@ export const cardDetails = [
         link: "https://www.bbc.com/news/live/world-africa-66815068",
     },
 ];
+export const editorsPicks = {
+    imgUrl: "https://source.unsplash.com/1700x",
+    title: "How atom bomb sensors found blue whales",
+    description:
+        "The aim was to hear nuclear weapons tests. They discoverd something else",
+    category: "Future",
+    link: " ",
+};

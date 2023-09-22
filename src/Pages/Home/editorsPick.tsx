@@ -1,6 +1,6 @@
 import CardHero from "../../components/CardHero";
 import Feature from "../../components/Feature";
-import { cardDetails } from "../../data";
+import { editorsPicks } from "../../data";
 type cardDetailsType = {
     imgUrl: string;
     title: string;
@@ -12,7 +12,7 @@ type buisnessType = {
     news: string;
 };
 const Editor = () => {
-    const cardData: cardDetailsType[] = cardDetails;
+    const cardData: cardDetailsType = editorsPicks;
     const buisnessNews: buisnessType[] = [
         {
             news: "Slowing food prices drive surprise inflation fall",
@@ -38,21 +38,15 @@ const Editor = () => {
                         <div>
                             <div className='hidden lg:flex'>
                                 <CardHero
-                                    imgUrl={cardData[0].imgUrl}
-                                    title={cardData[0].title}
-                                    category={cardData[0].category}
-                                    link={cardData[0].link}
+                                    imgUrl={cardData.imgUrl}
+                                    title={cardData.title}
+                                    category={cardData.category}
+                                    link={cardData.link}
                                     main={true}
+                                    description='The aim was to hear rouge nuclear weapons tests. They discovered something else'
                                 />
                             </div>
-                            <div className='lg:hidden'>
-                                <Feature
-                                    imgDisp={cardData[0].imgUrl}
-                                    title={cardData[0].title}
-                                    description={cardData[0].title}
-                                    category={cardData[0].category}
-                                />
-                            </div>
+                            <div className='lg:hidden'></div>
                         </div>
                         <div className='grid grid-cols-3'>
                             <div></div>

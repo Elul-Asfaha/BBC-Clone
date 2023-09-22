@@ -3,7 +3,6 @@ import CustomSectionCard from "./customSectionCard";
 type customSectionType = {
     sectionTitle: string;
     sectionDesctiption: string;
-    link: string;
     sectionData: { desctiption: string; url: string }[];
     buttonName: string;
     bg_url: string;
@@ -11,7 +10,6 @@ type customSectionType = {
 const CustomSection = ({
     sectionTitle,
     sectionDesctiption,
-    link,
     bg_url,
     sectionData,
     buttonName,
