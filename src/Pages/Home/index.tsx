@@ -5,7 +5,6 @@ import { FeatureDetails, cardDetails } from "../../data";
 import Editor from "./editorsPick";
 import Weather from "./Weather";
 import CustomSection from "../../components/CustomSection";
-
 type featuredDataType = {
     type: string;
     featureData: {
@@ -89,7 +88,7 @@ const Home = () => {
                     },
                 ]}
                 sectionDesctiption='The most amazing videos from the BBC'
-                bg_url="[url('https://images.unsplash.com/photo-1507713215125-f3cf87cfbe20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1000&ixid=MnwxfDB8MXxyYW5kb218MHx8c3Vuc2V0LHNub3csbW91bnRhaW58fHx8fHwxNjk1NDA2Mjk1&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1700')]"
+                bg_url='https://source.unsplash.com/1700x1000?sunset&snow&mountain'
             />
 
             <div className='w-full max-w-[1300px] md:px-5 mx-auto flex flex-col gap-5'>
@@ -99,29 +98,6 @@ const Home = () => {
                 />
             </div>
             <Editor />
-            <CustomSection
-                sectionTitle='Future Planet'
-                buttonName='Visit Future Planet'
-                sectionData={[
-                    {
-                        url: "https://www.youtube.com/watch?v=NW7gnyW1mA8",
-                        desctiption:
-                            "Manchester United players 'remain upset at De Gea exit' amid Onana struggles",
-                    },
-                    {
-                        url: "https://www.youtube.com/watch?v=AlTYtDaZE6c",
-                        desctiption:
-                            "Mexico’s non-human 'Alien-like' beings fake?",
-                    },
-                    {
-                        url: "https://www.youtube.com/watch?v=_IsxNr8CSxk",
-                        desctiption:
-                            "Should We Be Freaking Out About The New COVID Variants?",
-                    },
-                ]}
-                sectionDesctiption='Solutions for a sustainable world'
-                bg_url="[url('https://images.unsplash.com/photo-1599451699085-12051dd4d85d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1000&ixid=MnwxfDB8MXxyYW5kb218MHx8Zm9ycmVzdHx8fHx8fDE2OTU0MDYzMDk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1700')]"
-            />
         </div>
     );
 };

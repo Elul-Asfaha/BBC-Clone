@@ -14,10 +14,9 @@ const CustomSection = ({
     sectionData,
     buttonName,
 }: customSectionType) => {
-    console.log(bg_url);
     return (
         <div
-            className={`bg-${bg_url} object-cover bg-no-repeat bg-cover px-5 pt-10 pb-[60px]`}
+            className={`bg-[url('${bg_url}')] object-cover bg-no-repeat bg-cover px-5 pt-10 pb-[60px]`}
         >
             <div className='w-full max-w-[1300px] mx-auto flex flex-col gap-5'>
                 <div className='w-full flex justify-between text-white'>
