@@ -6,7 +6,7 @@ type customSectionType = {
     sectionData: { desctiption: string; url: string }[];
     buttonName: string;
     bg_url: string;
-    highlight: boolean;
+    highlight?: boolean;
 };
 const CustomSection = ({
     sectionTitle,

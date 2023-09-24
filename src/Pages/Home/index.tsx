@@ -4,6 +4,8 @@ import DateComponent from "./date";
 import { FeatureDetails, cardDetails } from "../../data";
 import Editor from "./editorsPick";
 import Weather from "./Weather";
+import FeaturedVideo from "./featuredVideo";
+
 import CustomSection from "../../components/CustomSection";
 type featuredDataType = {
     type: string;
@@ -122,6 +124,7 @@ const Home = () => {
                 highlight={true}
                 bg_url=''
             />
+            <FeaturedVideo />
         </div>
     );
 };
