@@ -1,5 +1,6 @@
 import CardHero from "../../components/CardHero";
 import Feature from "../../components/Feature";
+import SideBar from "../../components/SideBar";
 import { editorsPicks } from "../../data";
 import { featuresDetail } from "../../data";
 
@@ -48,7 +49,7 @@ const Editor = () => {
                 <div className='grid md:grid-cols-3 gap-5'>
                     <div className='w-full col-span-2 flex flex-col gap-5'>
                         <div>
-                            <div className='hidden lg:flex'>
+                            <div className='hidden md:flex'>
                                 <CardHero
                                     imgUrl={cardData.imgUrl}
                                     title={cardData.title}
@@ -60,7 +61,7 @@ const Editor = () => {
                             </div>
                             <div className='lg:hidden'></div>
                         </div>
-                        <div className='grid grid-cols-3 gap-5'>
+                        <div className='grid grid-cols-2 lg:grid-cols-3 gap-5'>
                             {featuresDetails.map((items, index) => (
                                 <Feature
                                     key={index}
@@ -73,27 +74,11 @@ const Editor = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='w-full '>
-                        <p className='bg-[red] text-white font-semibold px-5 py-1'>
-                            LATEST BUISNESS NEWS
-                        </p>
-                        <div>
-                            {buisnessNews.map((items, index) => (
-                                <div
-                                    key={index}
-                                    className='flex flex-col lg:flex-row gap-5 text-xl px-5 items-center text-center justify-center even:bg-gray-700 odd:bg-gray-800 py-5 md:py-10'
-                                >
-                                    <div className='rounded-full w-fit italic px-4 py-2 bg-[red] text-white'>
-                                        <p>{index + 1}</p>
-                                    </div>
-
-                                    <p className='text-gray-300'>
-                                        {items.news}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    <SideBar
+                        data={buisnessNews}
+                        profile={false}
+                        title='LATEST BUISNESS NEWS'
+                    />
                 </div>
             </div>
         </div>

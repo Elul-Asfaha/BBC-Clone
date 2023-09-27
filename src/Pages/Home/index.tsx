@@ -7,6 +7,7 @@ import Weather from "./Weather";
 import FeaturedVideo from "./featuredVideo";
 
 import CustomSection from "../../components/CustomSection";
+import More from "./more";
 type featuredDataType = {
     type: string;
     featureData: {
@@ -29,7 +30,7 @@ const Home = () => {
     const featuredData: featuredDataType[] = FeatureDetails;
     return (
         <div className='w-full flex flex-col'>
-            <div className='hidden md:flex w-full max-w-[1300px] px-5 mx-auto justify-between pt-5 text-xl leading-6'>
+            <div className='hidden md:flex w-full max-w-[1300px] px-5 mx-auto justify-between py-4 text-xl leading-6'>
                 <div className='font-bold text-gray-800'>
                     Welcome to BBC.com
                 </div>
@@ -125,6 +126,7 @@ const Home = () => {
                 bg_url=''
             />
             <FeaturedVideo />
+            <More />
         </div>
     );
 };

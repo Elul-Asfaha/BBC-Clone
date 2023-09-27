@@ -23,13 +23,13 @@ const Feature = ({
             <img
                 src={imgDisp}
                 alt={title}
-                className='object-cover w-full hidden md:flex bg-gray-300'
+                className='object-cover w-full hidden md:flex bg-gray-300 h-[200px]'
                 height={height}
             />
             <div className={`flex flex-col gap-1 ${background ? "p-2" : ""}`}>
                 <p className='font-bold text-xl'>{title}</p>
                 <p className='text-gray-700'>{description}</p>
-                <div className='border-l-2 mt-5 border-red-500 pl-2 leading-5'>
+                <div className='border-l-2 mt-5 border-red-500 pl-2 leading-5 uppercase text-gray-500'>
                     {category}
                 </div>
             </div>

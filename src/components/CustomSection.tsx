@@ -24,10 +24,8 @@ const CustomSection = ({
             <div className='w-full max-w-[1300px] mx-auto flex flex-col gap-5'>
                 <div className='w-full flex justify-between text-white'>
                     <p
-                        className={`text-3xl ${
-                            highlight
-                                ? "border-2 border-green-800 py-1 px-3"
-                                : ""
+                        className={`text-2xl font-bold ${
+                            highlight ? "border-2 border-green-800 px-1" : ""
                         }`}
                     >
                         {sectionTitle}
