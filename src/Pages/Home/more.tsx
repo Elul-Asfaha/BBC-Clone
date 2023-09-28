@@ -77,7 +77,7 @@ const More = () => {
                         title='correspondents'
                         authors={true}
                     />
-                    <div className='w-full col-span-2 flex flex-col gap-5'>
+                    <div className='w-full md:col-span-2 flex flex-col gap-5'>
                         <div>
                             <div className='hidden md:flex'>
                                 <CardHero
