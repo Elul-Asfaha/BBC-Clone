@@ -23,9 +23,19 @@ const SideBar = ({ data, profile = false, title, authors }: sideBarType) => {
                         <div className='w-fit'>
                             {profile ? (
                                 <img
-                                    src={items.profile}
+                                    src={
+                                        items.profile &&
+                                        items.profile +
+                                            Math.floor(
+                                                Math.random() *
+                                                    (1000 - 900 + 1) +
+                                                    900
+                                            ) +
+                                            "?" +
+                                            "profile"
+                                    }
                                     alt=''
-                                    className='h-[30px] w-[30px] rounded-full hidden lg:flex'
+                                    className='h-[60px] w-[60px] object-cover rounded-full hidden lg:flex'
                                 />
                             ) : (
                                 <p className='px-4 py-2 rounded-full bg-[red]  italic text-white'>

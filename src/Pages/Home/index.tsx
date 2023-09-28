@@ -8,6 +8,7 @@ import FeaturedVideo from "./featuredVideo";
 
 import CustomSection from "../../components/CustomSection";
 import More from "./more";
+import OtherLanguages from "./otherLanguages";
 type featuredDataType = {
     type: string;
     featureData: {
@@ -71,7 +72,7 @@ const Home = () => {
             </div>
             <Weather />
             <CustomSection
-                sectionTitle='Future'
+                sectionTitle='REEL'
                 buttonName='Visit Reel'
                 sectionData={[
                     {
@@ -127,6 +128,7 @@ const Home = () => {
             />
             <FeaturedVideo />
             <More />
+            <OtherLanguages />
         </div>
     );
 };

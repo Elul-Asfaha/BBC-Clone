@@ -35,42 +35,42 @@ const More = () => {
                             {
                                 news: "asdasdsadsadsadasdasd",
                                 author: "asdasd",
-                                profile: "asdsad",
+                                profile: "https://source.unsplash.com/1700x",
                             },
                             {
                                 news: "asdasdsadsadsadasdasd",
                                 author: "asdasd",
-                                profile: "asdsad",
+                                profile: "https://source.unsplash.com/1700x",
                             },
                             {
                                 news: "asdasdsadsadsadasdasd",
                                 author: "asdasd",
-                                profile: "asdsad",
+                                profile: "https://source.unsplash.com/1700x",
                             },
                             {
                                 news: "asdasdsadsadsadasdasd",
                                 author: "asdasd",
-                                profile: "asdsad",
+                                profile: "https://source.unsplash.com/1700x",
                             },
                             {
                                 news: "asdasdsadsadsadasdasd",
                                 author: "asdasd",
-                                profile: "asdsad",
+                                profile: "https://source.unsplash.com/1700x",
                             },
                             {
                                 news: "asdasdsadsadsadasdasd",
                                 author: "asdasd",
-                                profile: "asdsad",
+                                profile: "https://source.unsplash.com/1700x",
                             },
                             {
                                 news: "asdasdsadsadsadasdasd",
                                 author: "asdasd",
-                                profile: "asdsad",
+                                profile: "https://source.unsplash.com/1700x",
                             },
                             {
                                 news: "asdasdsadsadsadasdasd",
                                 author: "asdasd",
-                                profile: "asdsad",
+                                profile: "https://source.unsplash.com/1700x",
                             },
                         ]}
                         profile={true}
