@@ -47,7 +47,7 @@ const Editor = () => {
                     Editor's Picks
                 </p>
                 <div className='grid md:grid-cols-3 gap-5'>
-                    <div className='w-full col-span-2 flex flex-col gap-5'>
+                    <div className='w-full md:col-span-2 flex flex-col gap-5'>
                         <div>
                             <div className='hidden md:flex'>
                                 <CardHero

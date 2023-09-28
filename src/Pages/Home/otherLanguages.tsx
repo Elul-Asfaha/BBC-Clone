@@ -15,7 +15,7 @@ const OtherLanguages = () => {
                     </div>
                     <div className='lg:col-span-2'>
                         <p className='text-xl font-semibold'>More Languages</p>
-                        <div className='grid grid-cols-4 text-sm'>
+                        <div className='grid grid-cols-2 lg:grid-cols-4 text-sm'>
                             {data.map((items, index) => (
                                 <div key={index} className='flex pb-3 gap-1'>
                                     <p>{items.language}</p>
