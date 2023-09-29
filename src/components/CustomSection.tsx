@@ -19,12 +19,12 @@ const CustomSection = ({
     console.log(bg_url);
     return (
         <div
-            className={`bg-[url('https://source.unsplash.com/1700x1000?sunset&snow&mountain')] object-cover bg-no-repeat bg-cover px-5 pt-10 pb-[60px]`}
+            className={`bg-[url('https://source.unsplash.com/1700x1000?sunset&snow&mountain')] object-cover bg-no-repeat bg-cover px-5 py-5 md:py-0 md:pt-10 md:pb-[60px]`}
         >
             <div className='w-full max-w-[1300px] mx-auto flex flex-col gap-5'>
-                <div className='w-full flex justify-between text-white'>
+                <div className='w-full flex justify-between items-center text-white'>
                     <p
-                        className={`text-2xl font-bold ${
+                        className={`text-lg md:text-2xl font-bold ${
                             highlight ? "border-2 border-green-800 px-1" : ""
                         }`}
                     >

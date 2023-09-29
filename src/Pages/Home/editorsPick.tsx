@@ -41,7 +41,7 @@ const Editor = () => {
         },
     ];
     return (
-        <div className='w-full py-8 bg-gray-200'>
+        <div className='w-full py-8 md:bg-gray-200'>
             <div className='w-full max-w-[1300px] px-5 flex flex-col gap-5 mx-auto'>
                 <p className='border-l-2 pl-2 border-blue-400 text-gray-800 font-bold text-2xl'>
                     Editor's Picks
@@ -61,7 +61,7 @@ const Editor = () => {
                             </div>
                             <div className='lg:hidden'></div>
                         </div>
-                        <div className='grid grid-cols-2 lg:grid-cols-3 gap-5'>
+                        <div className='grid grid-cols-1 lg:grid-cols-3 md:gap-5'>
                             {featuresDetails.map((items, index) => (
                                 <Feature
                                     key={index}

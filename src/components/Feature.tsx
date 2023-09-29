@@ -17,7 +17,7 @@ const Feature = ({
     return (
         <div
             className={`flex flex-col justify-between md:gap-1 border-b md:border-none pb-2 md:pb-0 hover:brightness-[90%] ${
-                background ? "bg-white" : ""
+                background ? "md:bg-white" : ""
             }`}
         >
             <img
@@ -27,9 +27,9 @@ const Feature = ({
                 height={height}
             />
             <div className={`flex flex-col gap-1 ${background ? "p-2" : ""}`}>
-                <p className='font-bold text-xl'>{title}</p>
-                <p className='text-gray-700'>{description}</p>
-                <div className='border-l-2 mt-5 border-red-500 pl-2 leading-5 uppercase text-gray-500'>
+                <p className='font-bold text-md md:text-xl'>{title}</p>
+                <p className='text-gray-700 hidden md:flex'>{description}</p>
+                <div className='border-l-2 md:mt-5 border-red-500 pl-2 leading-3 md:leading-4 text-sm md:text-md text uppercase text-gray-500'>
                     {category}
                 </div>
             </div>

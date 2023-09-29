@@ -19,7 +19,7 @@ const CardHero = ({
         <Link to={link} className='w-full'>
             <div
                 className={`w-full relative flex hover:brightness-50 ${
-                    main ? "min-h-[400px]" : "md:h-[190px]"
+                    main ? "min-h-[200px]" : "md:h-[190px]"
                 }`}
             >
                 <img
@@ -43,10 +43,14 @@ const CardHero = ({
                             : "w-full md:p-5 md:absolute flex flex-col md:justify-end md:inset-0 gap-2 md:bg-black/30 md:text-white border-b pb-3 md:border-none"
                     }`}
                 >
-                    <div className='text-2xl font-bold'>{title}</div>
-                    {main && <div className='text-gray-200'>{description}</div>}
+                    <div className='text-lg md:text-2xl font-bold'>{title}</div>
+                    {main && (
+                        <div className='text-gray-200 hidden md:flex'>
+                            {description}
+                        </div>
+                    )}
                     <div
-                        className={`border-l-2 border-red-500 pl-3 leading-4 uppercase text-sm ${
+                        className={`border-l-[2.5px] border-red-500 pl-3 leading-4 uppercase text-sm ${
                             main
                                 ? "text-gray-300"
                                 : "text-gray-800 md:text-gray-300"

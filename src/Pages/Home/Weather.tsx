@@ -10,7 +10,7 @@ const Weather = () => {
         setDisplayWeather(searchWeather);
     };
     return (
-        <div className='w-full max-w-[1300px] mx-auto px-5 flex flex-col gap-5 py-5'>
+        <div className='w-full max-w-[1300px] mx-auto px-4 flex flex-col gap-5 py-5'>
             <div className='flex items-center gap-5'>
                 <p className='text-gray-800 font-bold  p-1'>
                     {displayWeather} WEATHER
@@ -35,9 +35,9 @@ const Weather = () => {
                     </div>
                 </form>
             )}
-            <div className='flex gap-3'>
+            <div className='flex justify-between md:justify-start gap-3'>
                 <div className='flex max-w-fit items-center gap-2'>
-                    <div className='flex-1 text-5xl'>
+                    <div className='flex-1 text-2xl md:text-5xl'>
                         <BsCloudDrizzle />
                     </div>
                     <div className='flex-1 flex flex-col'>
@@ -46,8 +46,8 @@ const Weather = () => {
                         <p>23C</p>
                     </div>
                 </div>
-                <div className='flex max-w-fit items-center gap-2'>
-                    <div className='flex-1 text-5xl'>
+                <div className='flex md:max-w-fit items-center gap-2'>
+                    <div className='flex-1  text-2xl md:text-5xl'>
                         <BsCloudDrizzle />
                     </div>
                     <div className='flex-1 flex flex-col'>
@@ -57,7 +57,7 @@ const Weather = () => {
                     </div>
                 </div>
                 <div className='flex max-w-fit items-center gap-2'>
-                    <div className='flex-1 text-5xl'>
+                    <div className='flex-1  text-2xl md:text-5xl'>
                         <BsCloudDrizzle />
                     </div>
                     <div className='flex-1 flex flex-col'>
@@ -67,7 +67,7 @@ const Weather = () => {
                     </div>
                 </div>
                 <div className='flex max-w-fit items-center gap-2'>
-                    <div className='flex-1 text-5xl'>
+                    <div className='flex-1  text-2xl md:text-5xl'>
                         <BsCloudDrizzle />
                     </div>
                     <div className='flex-1 flex flex-col'>

@@ -12,7 +12,7 @@ type featured = {
 const Featured = ({ type, featureData }: featured) => {
     return (
         <div className='flex flex-col gap-5 pt-5'>
-            <p className='border-l-2 text-gray-800 hover:text-black border-red-500 pl-2 leading-6 text-3xl font-bold'>
+            <p className='border-l-2 text-gray-800 hover:text-black border-red-500 pl-2 leading-6 text-xl md:text-3xl font-bold'>
                 {type}
             </p>
             <div className='grid md:grid-cols-3 gap-5'>

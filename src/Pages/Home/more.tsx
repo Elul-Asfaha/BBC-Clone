@@ -24,8 +24,8 @@ const More = () => {
     const cardData: cardDetailsType = editorsPicks;
 
     return (
-        <div className='w-full py-8 bg-gray-200'>
-            <div className='w-full max-w-[1300px] mx-auto flex flex-col gap-5'>
+        <div className='w-full py-8 md:bg-gray-200'>
+            <div className='w-full max-w-[1300px] px-4 md:px-0 mx-auto flex flex-col gap-5'>
                 <p className='border-l-2 pl-2 border-blue-400 text-gray-800 font-bold text-2xl'>
                     More around the BBC
                 </p>
@@ -91,7 +91,7 @@ const More = () => {
                             </div>
                             <div className='lg:hidden'></div>
                         </div>
-                        <div className='grid grid-cols-2 lg:grid-cols-3 gap-5'>
+                        <div className='grid grid-cols-1 lg:grid-cols-3 md:gap-5'>
                             {featuresDetails.map((items, index) => (
                                 <Feature
                                     key={index}

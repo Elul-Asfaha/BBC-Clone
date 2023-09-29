@@ -9,11 +9,13 @@ const FeaturedVideo = () => {
                     Featured video
                 </p>
                 <div className='w-full relative'>
-                    <ReactPlayer
-                        url='https://www.youtube.com/watch?v=NW7gnyW1mA8'
-                        height='600px'
-                        width='100%'
-                    />
+                    <div className='w-full h-[215px] md:h-[600px]'>
+                        <ReactPlayer
+                            url='https://www.youtube.com/watch?v=NW7gnyW1mA8'
+                            height='100%'
+                            width='100%'
+                        />
+                    </div>
                     <div className='absolute inset-0 bg-black/40 top-0 bottom-0 right-0 left-0 flex flex-col justify-between text-white'>
                         <div className='bg-black h-[50px] w-[50px] flex items-center justify-center text-2xl'>
                             <BsPlayFill />
